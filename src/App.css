@@ -1,0 +1,211 @@
+/* https: //colorhunt.co/palette/cdf0eaf9f9f9ecc5fbfaf4b7 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.mainContainer{
+  background-color: #F9F9F9;
+  min-height: 100vh;
+  animation: splash 2s normal forwards ease-in-out;
+}
+
+.sectionHeading{
+  text-align: right;
+  font-family: 'Nunito', sans-serif;
+  margin: 200px 10px auto 10px;
+}
+
+.sectionHeading:hover{
+  animation: hover 1s infinite alternate ease-in-out;
+}
+
+.leftHrRed {
+  background-color: red;
+  border: none;
+  height: 2px;
+  margin: 5px auto 10px 10px;
+  width: 70%;
+  text-align: left;
+}
+
+.leftHrRed:hover{
+  background-color: greenyellow;
+}
+
+.rightHrRed {
+  background-color: red;
+  border: none;
+  height: 2px;
+  margin: 5px 10px 10px auto;
+  width: 70%;
+  text-align: right;
+}
+
+.rightHrRed:hover{
+  background-color: greenyellow;
+  animation: marquee 10s linear 1;
+}
+
+
+.greetingMessageContainer{
+  font-size: 70px;
+  text-align: left;
+  width: 90%;
+  margin: 80px auto 10px 10px;
+  font-family: 'Nunito',sans-serif;
+}
+
+.greetingMessageContainer:hover{
+      animation: hover 10s infinite alternate ease-in-out;
+}
+
+.greetingMessageHRU{
+  margin:20px auto 10px 10px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.greetingMessageHRU:hover{
+    animation: hover 10s infinite alternate ease-in-out;
+}
+
+
+.cityName:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+
+
+.aboutMeContainer{
+  margin: 140px auto 10px 10px;
+  width: 80%;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+/* list */
+.aboutMeList{
+  list-style: none;
+}
+.aboutMeList:nth-of-type(1) {
+  list-style-position: inside;
+  padding: 10px;
+  border-left: solid 2px red;
+}
+
+.aboutMeList:nth-of-type(2) {
+  list-style-position: outside;
+  padding: 0;
+  border-left: solid 2px red;
+}
+
+.aboutMeList li:hover{
+  text-decoration: underline;
+  text-decoration-color:greenyellow ;
+  font-weight: bold;
+}
+
+.anchorHide{
+  text-decoration: none;
+}
+
+.achieveHolder{
+  margin: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.achievementLogoHolder{
+  text-align: right;
+}
+
+.achievementLogo{
+  width: 100px;
+  height: 100px;
+  text-align: right;
+  border-radius: 50%;
+}
+
+.achievementLogo:hover{
+    animation: hover 1s infinite alternate-reverse ease-in-out;
+    cursor: pointer;
+}
+
+/* Scrollbar design */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 108, 108, 0.996);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: greenyellow;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+/* Marquee effect */
+
+.marquee {
+  width: 100%;
+  line-height: 20px;
+  /* background-color: #CDF0EA; */
+  color: rgba(0, 0, 0, 0.081);
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee:hover{
+  color: black;
+  cursor: help;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 120s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes splash {
+  from {
+    opacity: 0;
+    transform: scale(0, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes hover {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.1, 1.1);
+  }
+}
