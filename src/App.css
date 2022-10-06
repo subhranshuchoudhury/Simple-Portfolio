@@ -4,7 +4,7 @@
 .mainContainer{
   background-color: #F9F9F9;
   min-height: 100vh;
-  animation: splash 2s normal forwards ease-in-out;
+  animation: splash 1s normal forwards ease-in-out;
 }
 
 .sectionHeading{
@@ -27,7 +27,8 @@
 }
 
 .leftHrRed:hover{
-  background-color: greenyellow;
+  background-color: #4E9F3D;
+  animation: marquee 10s linear 1;
 }
 
 .rightHrRed {
@@ -40,7 +41,7 @@
 }
 
 .rightHrRed:hover{
-  background-color: greenyellow;
+  background-color: #4E9F3D;
   animation: marquee 10s linear 1;
 }
 
@@ -49,7 +50,7 @@
   font-size: 70px;
   text-align: left;
   width: 90%;
-  margin: 80px auto 10px 10px;
+  margin: 120px auto 10px 10px;
   font-family: 'Nunito',sans-serif;
 }
 
@@ -100,13 +101,16 @@
 
 .aboutMeList li:hover{
   text-decoration: underline;
-  text-decoration-color:greenyellow ;
+  text-decoration-color:black ;
   font-weight: bold;
 }
 
 .anchorHide{
   text-decoration: none;
+  color: black;
 }
+
+/* Card Design */
 
 .achieveHolder{
   margin: 10px;
@@ -114,6 +118,7 @@
 }
 
 .achievementLogoHolder{
+  /* by default */
   text-align: right;
 }
 
@@ -129,6 +134,44 @@
     cursor: pointer;
 }
 
+/* Project card design */
+
+.mainProjectHolder{
+  height: 400px;
+  text-align: center;
+  overflow-x: scroll;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+}
+
+.projectHolder{
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+}
+.projectLogo{
+  width: 100px;
+  height: 100px;
+  border-radius: 23px;
+  text-align: center;
+}
+
+.projectName{
+  font-weight: bold;
+  font-size: large;
+}
+
+.iframeContainer{
+  margin-top: 70px;
+  text-align: center;
+}
+
+.footer{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: gray;
+  padding-bottom: 30px;
+}
 /* Scrollbar design */
 
 /* width */
@@ -143,7 +186,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: greenyellow;
+  background: black;
 }
 
 /* Handle on hover */
@@ -173,6 +216,8 @@
   padding-left: 100%;
   animation: marquee 120s linear infinite;
 }
+
+/* Animations */
 
 @keyframes marquee {
   0% {

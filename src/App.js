@@ -3,6 +3,10 @@ import Header from "./components/Header";
 import Welcome from "./components/Welcome";
 import AboutMe from "./components/AboutMe";
 import MyAchievement from "./components/MyAchievement";
+import Socials from "./components/Socials";
+import MyProjects from "./components/MyProjects";
+import ContactMe from "./components/ContactMe";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -11,6 +15,10 @@ function App() {
         <Welcome />
         <AboutMe />
         <MyAchievement />
+        <MyProjects />
+        <Socials />
+        <ContactMe />
+        <Footer />
       </div>
     </>
   );
