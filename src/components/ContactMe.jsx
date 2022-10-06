@@ -7,7 +7,7 @@ const ContactMe = () => {
         Contact Me
       </h2>
       <hr className="rightHrRed"></hr>
-      <div className="iframeContainer">
+      <div className="contactUsContainer">
         <a
           className="anchorHide"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeUnyoYucjPyFEsQ9QLg7XA8YIPdMdEVd5uWYau-s9Jyo5wHg/viewform"

@@ -1,4 +1,3 @@
-/* https: //colorhunt.co/palette/cdf0eaf9f9f9ecc5fbfaf4b7 */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 .mainContainer{
@@ -161,10 +160,14 @@
   font-size: large;
 }
 
+.contactUsContainer{
+  text-align: center;
+}
+
 
 .contactMeLogo{
   width: 200px;
-  margin-bottom: 50px;
+  margin: 30px auto;
 }
 
 .footer{
