@@ -8,19 +8,16 @@ const ContactMe = () => {
       </h2>
       <hr className="rightHrRed"></hr>
       <div className="iframeContainer">
-        <iframe
-          title="ContactMe"
-          src={
-            "https://docs.google.com/forms/d/e/1FAIpQLSeUnyoYucjPyFEsQ9QLg7XA8YIPdMdEVd5uWYau-s9Jyo5wHg/viewform?embedded=true"
-          }
-          width={"640"}
-          height={"1400"}
-          frameborder={"0"}
-          marginheight={"0"}
-          marginwidth={"0"}
+        <a
+          className="anchorHide"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeUnyoYucjPyFEsQ9QLg7XA8YIPdMdEVd5uWYau-s9Jyo5wHg/viewform"
         >
-          Loading…
-        </iframe>
+          <img
+            className="contactMeLogo"
+            src="images/contactMeLogo.png"
+            alt=""
+          />
+        </a>
       </div>
     </>
   );

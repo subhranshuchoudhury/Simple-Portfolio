@@ -161,9 +161,10 @@
   font-size: large;
 }
 
-.iframeContainer{
-  margin-top: 70px;
-  text-align: center;
+
+.contactMeLogo{
+  width: 200px;
+  margin-bottom: 50px;
 }
 
 .footer{
@@ -172,6 +173,8 @@
   color: gray;
   padding-bottom: 30px;
 }
+
+
 /* Scrollbar design */
 
 /* width */

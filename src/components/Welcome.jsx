@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-
 const Welcome = () => {
   const [userInfo, setUserInfo] = useState([]);
   const greetingMessages = [
@@ -11,9 +10,10 @@ const Welcome = () => {
   ];
   const fetchUserInfo = async () => {
     try {
-      const { data } = await axios.get("http://ip-api.com/json/");
+      const { data } = await axios.get(
+        `https://ipinfo.io/?token=${process.env.REACT_APP_TOKEN}`
+      );
       setUserInfo(data);
-      console.log(data);
     } catch (error) {
       console.log(error);
     }
